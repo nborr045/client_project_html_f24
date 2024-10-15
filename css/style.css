@@ -108,12 +108,12 @@ nav a {
     padding: 10px 15px; /* Padding around the link */
     text-decoration: none; /* Remove underline */
     color: #ffcb05; /* Yellow text color */
-    background-color: #00274c; /* Dark blue background */
-    border: 2px solid transparent; /* No border by default */
-    border-radius: 5px; /* Optional: rounded corners */
+    background-color: #00274c; 
+    border: 2px solid transparent; 
+    border-radius: 5px; 
 }
 
 nav a.active {
     border: 2px solid #ffcb05; /* Yellow border for active link */
-    background-color: #003a5c; /* Darker blue background for active link */
+    background-color: #003a5c; /*background for active link */
 }
