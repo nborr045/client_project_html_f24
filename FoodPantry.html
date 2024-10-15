@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 2</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <a href = "">Skip to Main Content</a>
+        <a href ="#main" class="skip-link">Skip to Main Content</a>
         <nav>
             <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "AcademicSupport.html">Page 1</a></li>
-                <li><a href = "FoodPantry.html">Page 2</a></li>
-                <li><a href = "FirstGen.html">Page 3</a></li>
+                <li><a href = "index.html" class="normal-link">Home</a></li>
+                <li><a href = "AcademicSupport.html" class="normal-link">Page 1</a></li>
+                <li><a href = "FoodPantry.html" class="active">Page 2</a></li> <!-- makes border aorund page 2-->
+                <li><a href = "FirstGen.html" class="normal-link">Page 3</a></li>
             </ul>
         </nav>
         <h1>University of Michigan Food Pantry</h1>
 
     </header>
-    <main>
-        <section>
+    <main id="main">
+        <section class="image-container">
             <h2> Welcome to the University of Michigan's Food Pantry Page!</h2>
-            <img src="/images/grocerybag.png" alt=" a grocery bag similar to the ones students can be provided through our resources.">
+            <img src="images/grocerybag.png" alt=" a grocery bag similar to the ones students can be provided through our resources.">
             <p>
                 College students and staff are facing alarming rates of food insecurity. The Maize and Blue Cupboard is committed to providing a timely and comprehensive solution for the U-M community. Through resources, educational programs, compassionate support, and more, we empower students to make informed decisions and develop essential life skills.</p>
                 <h3>Services:</h3>
@@ -34,9 +36,9 @@
                     </li>
                 </ul>
         </section>
-        <section>
+        <section class="image-container">
             <h3> The entrance to the office that provides our services looks like this:</h3>
-            <img src="/images/Barbour.webp" alt=" Entrance to the office in which a student can find out services. ">
+            <img src="images/Barbour.webp" alt=" Entrance to the office in which a student can find out services. ">
             <p>Located in the basement of the Betsy Barbour Residence Hall, please enter via the Maynard entrance only to ensure privacy for residents. Please contact us if you need ramp or elevator access.
                 Address: 420 S State St Ann Arbor, MI 48109
                 Phone: 734-936-2794</p>

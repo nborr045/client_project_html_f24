@@ -1,0 +1,119 @@
+body {
+    margin: 0; /* removes default margin*/
+    font-family: Arial, sans-serif; 
+    color: #ffcb05; /* makes text yellow for all website*/
+    background-color: #00274c; /* makes blue background for whole website*/
+}
+/*this makes the background of the whole website blue and the font color yellow and the font more readable*/
+ul{
+    list-style-type: none;/* removes vullet points*/
+    padding: 10px;
+    margin: 0 auto;/* centers list*/
+    display: grid; /**/
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /*adjusts the number of columns based on available space, with a minimum width of 100px per column.*/
+    width: 100%; /*makes the list take up the full screen width, this is usually accompanied by max-width:100%*/
+    box-sizing: border-box;/* ensures padding and borders are included in the element's width.*/
+    place-items: center;
+    border: 2px solid #ffcb05; /* adds yellow border*/
+}
+
+
+a {
+    color: #ffcb05;/* makes link yellow*/
+    display: grid;
+    background-color: #00274c;
+    text-align: center;/* this is possible due to display:grid */
+    padding: 10px;
+}
+
+a:hover, a:focus {
+    text-decoration: underline; /* adds an underline when the mouse hovers over a*/
+}
+
+h1 {
+    display: grid; 
+    text-align: center; 
+    font-style: bold;
+    font-size: 2.5rem ;
+}
+
+h2, p{
+    display: grid; /**/
+    text-align: center; /**/
+    font-style: bold;/**/
+    font-size: 1.5rem ; /**/
+}
+
+
+li {
+    display: grid; 
+    place-items: center; 
+    list-style-type: none; /* takes out bullets*/
+    color: #ffcb05; 
+    padding: 10px;
+    width: 100%; 
+    box-sizing: border-box;/**/ 
+    white-space: normal;
+    overflow: visible;/*allows the text to wrap normally without cutting off or overflowing content. along with the white space this is possible*/
+}
+
+h3, figcaption {
+    text-align: center; /**/
+    font-weight: bold; /**/
+    color: #ffcb05;/**/
+    background-color: #00274c;/**/
+  }
+
+.img-container {
+    display: grid;                
+    place-items: center;  
+    height: 50vh; 
+    overflow: hidden;     /* hides any image that overflows*/                 
+  }
+
+img {           
+    height: 100%;  /**/
+    width: 50%; /**/
+    border: 2px solid #ffcb05;/**/ 
+    object-fit: contain;   /* makes image fit in container without overflow*/
+    place-items: center;  
+    size: 25px;   /**/
+    display: block;/**/
+    margin-left: auto;/* this alone with the other margin center the image*/
+    margin-right: auto;/**/
+    width: 50%;/**/
+  }
+
+.skip-link {
+    position: absolute;
+    left: -9999px; /* this along with position hide the skip to main*/
+    top: 0; /**/
+}
+
+.skip-link:focus {
+    left: 10px; /**/
+    top: 10px; /* this along with left makes skip to main show up when focused*/
+    background-color: #ffcb05;/**/ 
+    color: #00274c; /**/
+    padding: 10px; /**/
+    z-index: 1000; /**/
+    border: 2px solid #00274c;/**/ 
+}
+
+.blue-m {
+    width: 500px; /* individual picture edit*/
+}
+
+nav a {
+    padding: 10px 15px; /* Padding around the link */
+    text-decoration: none; /* Remove underline */
+    color: #ffcb05; /* Yellow text color */
+    background-color: #00274c; /* Dark blue background */
+    border: 2px solid transparent; /* No border by default */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+nav a.active {
+    border: 2px solid #ffcb05; /* Yellow border for active link */
+    background-color: #003a5c; /* Darker blue background for active link */
+}

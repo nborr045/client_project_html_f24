@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Success Portal</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <a href = "">Skip to Main Content</a>
-        <img src="/images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+    <header class="image-container"> <!-- makes it so that one can edit the image container and therefore the images -->
+        <a  href = "#main" class="skip-link">Skip to Main Content</a> <!-- this class helps to edit the skip to main-->
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" class="blue-m"> <!-- this class makes it so that one can edit only rhis picture (.class in css)-->
         <nav>
             <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "AcademicSupport.html">Page 1</a></li>
-                <li><a href = "FoodPantry.html">Page 2</a></li>
-                <li><a href = "FirstGen.html">Page 3</a></li>
+                <li><a href = "index.html" class="active">Home</a></li> <!-- creates class for border around active menu option-->
+                <li><a href = "AcademicSupport.html" class="normal-link">Page 1</a></li>
+                <li><a href = "FoodPantry.html" class="normal-link">Page 2</a></li>
+                <li><a href = "FirstGen.html" class="normal-link">Page 3</a></li>
             </ul> 
         </nav>
         <h1>Student Success Portal</h1>
 
     </header>
-    <main>
+    <main id="main"> <!-- applies all css to most website-->
         <section>
             <h2>Welcome to the UM Grad Success Navigator</h2>
             <p> Your Comprehensive Guide to Resources for Graduate School Success</p>
@@ -38,16 +40,16 @@
             <p>Keeping your body healthy is essential for success. The University of Michigan offers numerous resources to help you stay in top physical condition:</p>
             <article>
                 <h3>University Health Service (UHS)</h3>
-                <figure>
-                    <img src="/images/UHS.jpg" alt="University Health Services building">
+                <figure class="image-container">
+                    <img src="images/UHS.jpg" alt="University Health Services building">
                     <figcaption>University Health Services Building</figcaption>
                 </figure>
                 <p>University Health Service (UHS): Access comprehensive medical care, including routine check-ups, vaccinations, and specialist referrals.</p>
             </article>
             <article>
                 <h3>Recreational Sports</h3>
-                <figure>
-                    <img src="/images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A student wears a UMSI backpack in fall on the drag.">
+                <figure class="image-container">
+                    <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A student wears a UMSI backpack in fall on the drag.">
                     <figcaption>UMSI out in the fall!</figcaption>
                 </figure>
                 <p>Participate in various fitness programs, sports clubs, and use of gym facilities to stay active and healthy.</p>
