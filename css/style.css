@@ -4,7 +4,9 @@ body {
     color: #ffcb05; /* makes text yellow for all website*/
     background-color: #00274c; /* makes blue background for whole website*/
 }
+
 /*this makes the background of the whole website blue and the font color yellow and the font more readable*/
+
 ul{
     list-style-type: none;/* removes vullet points*/
     padding: 10px;
@@ -21,8 +23,8 @@ ul{
 
 a {
     color: #ffcb05;/* makes link yellow*/
-    display: grid;
     background-color: #00274c;
+    display: grid;
     text-align: center;/* this is possible due to display:grid */
     padding: 10px;
 }
@@ -32,14 +34,12 @@ a:hover, a:focus {
 }
 
 h1 {
-    display: grid; 
     text-align: center; 
     font-style: bold;
     font-size: 2.5rem ;
 }
 
 h2, p{
-    display: grid; /**/
     text-align: center; /**/
     font-style: bold;/**/
     font-size: 1.5rem ; /**/
@@ -47,7 +47,7 @@ h2, p{
 
 
 li {
-    display: grid; 
+    display: grid;
     place-items: center; 
     list-style-type: none; /* takes out bullets*/
     color: #ffcb05; 
@@ -105,6 +105,13 @@ img {
     width: 500px; /* individual picture edit*/
 }
 
+nav {
+    display: flex;  
+    justify-content: center; 
+    background-color: #00274c;
+    padding: 10px;
+}
+
 nav a {
     padding: 10px 15px; /* Padding around the link */
     text-decoration: none; /* Remove underline */
@@ -112,9 +119,55 @@ nav a {
     background-color: #00274c; 
     border: 2px solid transparent; 
     border-radius: 5px; 
+    margin: 0 5px;
 }
 
 nav a.active {
     border: 2px solid #ffcb05; /* Yellow border for active link */
     background-color: #003a5c; /*background for active link */
+}
+
+@media (min-width: 768px) {
+    ul {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px; 
+        max-width: 80%; 
+    }
+
+    
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2, p {
+        font-size: 2rem;
+    }
+
+    
+    nav a {
+        padding: 15px 20px;
+        font-size: 1.2rem;
+    }
+
+    
+    img {
+        width: 80%;
+    }
+}
+
+/*challenge*/
+
+.img-container img {
+    height: 100%;
+    width: 50%;
+    border: 2px solid #ffcb05;
+    object-fit: contain;
+    transition: transform 0.3s ease;  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-container img:hover {
+    transform: scale(1.1);  
 }
